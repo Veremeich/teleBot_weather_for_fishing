@@ -18,7 +18,7 @@ table_list = parsing_str.split('\xa0')
 table_list2 = table_list[:8]
 
 
-db_weather = open("./db_weather.txt", "r")
+db_weather = open("./test1/db_weather.txt", "r")
 for line in db_weather:
     new = literal_eval(line)
 w = list(new)
@@ -35,14 +35,16 @@ def upprnd_db_weather():
 
 upprnd_db_weather()
 
-# def split_list(list, wanted_parts=60):
-#     length = len(list)
-#     return [list[i*length // wanted_parts: (i+1)*length // wanted_parts]
-#             for i in range(wanted_parts)]
 
-# schedule.every().day.at("10:00").do(upprnd_db_weather)
-# schedule.every().day.at("10:00").do(day_values_func)
+def split_list(list, wanted_parts=60):
+    length = len(list)
+    return [list[i*length // wanted_parts: (i+1)*length // wanted_parts]
+            for i in range(wanted_parts)]
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+
+schedule.every().day.at("10:00").do(upprnd_db_weather)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
