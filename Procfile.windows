@@ -1,0 +1,2 @@
+worker: python db_weather.py $PORT
+worker: python teleBot.py $PORT
