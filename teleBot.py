@@ -152,7 +152,7 @@ def temperature():
 temperature()
 
 
-bot = telebot.TeleBot('1963867382:AAGgUt4w8TOZScjYjFx3a-ughpwACkcThA0')
+bot = telebot.TeleBot('TOKEN')
 
 
 @bot.message_handler(commands=["start"])
