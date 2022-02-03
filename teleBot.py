@@ -29,7 +29,7 @@ day_values = ('Дата: ' + table_list2[0] + '\n' + 'Температура п�
               '\n' + 'Максимальна швидкість вітру, м/с: ' + table_list2[4] + '\n' + 'Атмосферний тиск, гПа: ' + table_list2[5] + '\n' + 'Атмосферний тиск, мм рт.ст.: ' + table_list2[6])
 
 
-db_weather = open("./db_weather.txt", "r")
+db_weather = open("./test1/db_weather.txt", "r")
 
 
 for line in db_weather:
@@ -152,7 +152,7 @@ def temperature():
 temperature()
 
 
-bot = telebot.TeleBot('TOKEN')
+bot = telebot.TeleBot('1963867382:AAGgUt4w8TOZScjYjFx3a-ughpwACkcThA0')
 
 
 @bot.message_handler(commands=["start"])
