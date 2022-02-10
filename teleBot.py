@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from flask import Flask, request
 
 
-TOKEN = '1963867382:AAGgUt4w8TOZScjYjFx3a-ughpwACkcThA0'
+TOKEN = '1$$$$$$$$$$$$$$$$$$$$$$$$$$$'
 bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 # bot.set_webhook()
